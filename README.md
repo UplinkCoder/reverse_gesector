@@ -2,7 +2,7 @@
 Reverse engineering g-sector 
 
 
-This repository contains my progress of revsering g-sector in the form of an ida project
+This repository contains my progress of reverse engineering g-sector in the form of an ida project
 and idc exports for types and database
 
 I will likely add scripts to aid in reversing as well
