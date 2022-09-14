@@ -298,7 +298,7 @@ typedef struct geEngine
     // Light module info
     uint8               StyleLUT1[64][256]; // Style intensity table (StyleLUT1[Intensity][Number]);
 
-    geBoolean           Changed;            // == GE_TRUE if needs to be updated with Driver
+//    geBoolean           Changed;            // == GE_TRUE if needs to be updated with Driver
 
     geBoolean           DisplayFrameRateCounter; // Whether or not to display the FPS string
 
