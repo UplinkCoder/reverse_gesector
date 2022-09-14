@@ -39,7 +39,9 @@
 0x422850=_WinMain@16
 0x423000=SubLarge
 0x423050=GameMgr_SetDriverAndMode
+0x423210=WndProc
 0x423DC0=GMenu_Create
+0x424D90=handleKeydown
 0x425450=Host_Create
 0x425770=Host_Frame
 0x425870=ReportError
