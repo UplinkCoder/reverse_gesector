@@ -1,0 +1,902 @@
+0x4051E0=spawn_bot?
+type: 
+0x408180=PhysicsObject_Spawn
+type: 
+0x408460=PhysicsJoint_Spawn
+type: 
+0x4086B0=ForceField_Spawn
+type: 
+0x409C30=?classic@locale@std@@SAABV12@XZ
+type: const struct std::locale *__cdecl()
+0x40EFC0=load_wav_loopbzzt
+type: 
+0x419D90=something_unwinding
+type: 
+0x41A0B0=some_net_related_cnd_set2
+type: 
+0x41A120=some_other_cnd_set
+type: 
+0x41A1D0=some_net_related_cnd_set1
+type: 
+0x41A410=setb0a
+type: int __cdecl(int *, int a, int b)
+0x41A470=create_gesector_client
+type: int __cdecl(geEngine *EngineP, int, int, int, int, int, int)
+0x41A5D0=load_hud?
+type: 
+0x41B2B0=Client_Something
+type: 
+0x41B470=some_init
+type: 
+0x41B500=Client_ReadServerMessages_preq
+type: int __cdecl(int, float)
+0x41B560=Client_ControlTempPlayers?
+type: 
+0x41CDF0=Client_AddMove
+type: int __cdecl(client *, move *srcMove)
+0x41CE80=Client_RemoveFristMove_
+type: 
+0x41D480=isKeyDown
+type: int __cdecl(int key)
+0x41D4C0=client?_ReadServerMessages
+type: 
+0x41E630=Client_UpdateSinglePlayer
+type: int __cdecl(int, int, float, float, int)
+0x41EC00=UpdatePlayers?
+type: int __cdecl(int, float)
+0x41F9C0=Client_RenderWorld
+type: int __cdecl(int, int, float)
+0x41FD60=client_readMessages
+type: 
+0x420080=some_file_read_
+type: int __cdecl(FILE *)
+0x420190=client_set_some_flag?
+type: 
+0x420290=init_gesector_client_
+type: 
+0x420340=Client_MovePlayerModel
+type: 
+0x4207A0=some_format_fn
+type: int __cdecl(int, int, int, int, int, char *)
+0x420D40=init_console?
+type: 
+0x421120=CreateGameMgr
+type: GameMgr_ *__cdecl(HINSTANCE, int, int, const char *name)
+0x421250=GameMgr_Frame
+type: int __cdecl(GameMgr_ *thisP, float timeDelta_)
+0x421320=GameMgr_doSetDriverAndMode
+type: int __cdecl(GameMgr_ *, geDriver *Driver, geDriver_Mode *DriverMode)
+0x421610=GameMgr_BeginFrame
+type: int __cdecl(GameMgr_ *thisP, int, geBoolean ClearScreen)
+0x4216A0=GameMgr_EndFrame
+type: 
+0x421720=GameMgr_ClearBackground
+type: 
+0x421B10=set_World?
+type: 
+0x4220C0=GameMgr_SetActorIndex
+type: 
+0x422650=some_functionPtr
+type: 
+0x422670=GameMgr_GetCamera
+type: void *__cdecl(GameMgr *thisP)
+0x4226C0=GameMgr_GetWinowHandle
+type: int __cdecl(GameMgr_ *thisP)
+0x4226E0=CreateGameWindow
+type: int __cdecl(HINSTANCE hInstance, const char *appName, int, int)
+0x422850=_WinMain@16
+type: int __fastcall(HINSTANCE hInstance, HINSTANCE hPrevInstance, char *pCmdLine, int nCmdShow)
+0x423000=SubLarge
+type: void __cdecl(LARGE_INTEGER *start, LARGE_INTEGER *end, LARGE_INTEGER *delta)
+0x423050=GameMgr_SetDriverAndMode
+type: 
+0x423210=WndProc
+type: unsigned int __stdcall(HWND Window, unsigned int Message, void *wParam, unsigned int lParam)
+0x423DC0=GMenu_Create
+type: 
+0x424D90=handleKeydown
+type: 
+0x425450=Host_Create
+type: host *__cdecl(geEngine *pEngine, int, int, int)
+0x425770=Host_Frame
+type: int __cdecl(net_host_something_t *, float maybeSomeTImeDelta)
+0x425870=ReportError
+type: 
+0x4261E0=something_with_the_menu
+type: 
+0x426570=NetMgr_InitSomething
+type: int __cdecl(bool flag)
+0x4266A0=NetMgr_JoinSession
+type: 
+0x4268F0=set_something_to_zero
+type: void __cdecl(void *)
+0x426910=server_create__
+type: 
+0x426CE0=send_world_data?
+type: 
+0x426EE0=send_msg_fnc
+type: 
+0x4276E0=net_server_disconnect_from_client
+type: 
+0x427AF0=spawn_world_maybe
+type: 
+0x427C80=Server_AddClient?
+type: 
+0x428050=parseClientMove
+type: int __cdecl(int, int, move *move)
+0x429100=init_some_function_pointer_table
+type: 
+0x4295C0=Server_SetClientScore
+type: 
+0x42A050=Text_Create
+type: 
+0x42A460=WSOCK32_3
+type: 
+0x42A466=WSOCK32_6
+type: 
+0x42A46C=WSOCK32_4
+type: 
+0x42A472=WSOCK32_10
+type: 
+0x42A478=WSOCK32_9
+type: 
+0x42A47E=WSOCK32_23
+type: 
+0x42A484=WSOCK32_52
+type: 
+0x42A48A=WSOCK32_57
+type: 
+0x42A490=WSOCK32_115
+type: 
+0x42AB10=loadFloat
+type: 
+0x42C5C0=alloc_
+type: void *__cdecl(int)
+0x42C8D0=unknown_libname_1
+type: 
+0x42D3D0=World_CreateBSPFromBox
+type: 
+0x42D5F0=geWorld_Create
+type: geWorld *__cdecl(geVFile *File)
+0x42DA60=geWorld_CreateRef
+type: 
+0x42DB80=World_WorldRenderQ
+type: 
+0x42DF70=RenderWorldModel
+type: 
+0x42EE50=CreateGBSP
+type: static World_BSP *__cdecl(geVFile *File)
+0x430420=geEngine_CreateWithVersion
+type: 
+0x430470=GameMgr_GetDisplayFramerateCounter
+type: 
+0x4304E0=WorldSetLTypeTable_
+type: int __cdecl(void *World, int32 LType, char *Table)
+0x433EC0=geBitmap_Create_Base
+type: 
+0x434000=geBitmap_Destroy
+type: 
+0x434AD0=__mkgmtime
+type: 
+0x435930=geBitmap_SetDriverFlags
+type: int __fastcall(void *bitmap, int flag)
+0x435B10=geBitmap_SetGammaCorrection_DontChange
+type: int __fastcall(geBitmap *Bitmap, geFloat Gamma)
+0x435C90=geBitmap_GetTHandle
+type: int __stdcall(geEngine *engine)
+0x438980=geBitmap_Palette_CreateRef
+type: 
+0x43ACD0=geErrorLog_AddExplicit
+type: void __cdecl(int ErrorType, const char *ErrorIDString, const char *ErrorFileString, int LineNumber, const char *UserString, const char *Context)
+0x43AF40=geVFile_OpenNewSystem
+type: geVFile *__fastcall(geVFile *FS, int FileSystemType, const char *Name, void *Context, unsigned int OpenModeFlags)
+0x43B0A0=geVFile_Open
+type: int __fastcall(void *FS, const char *fname, int flags)
+0x43B230=geVFile_Read
+type: geBoolean __fastcall(geVFile *file, void *buffer, int length)
+0x43B350=geSound_CreateSoundSystem
+type: geSound_System *__cdecl(HWND hWnd)
+0x43B4E0=CreateSoundManager
+type: static SoundManager *__cdecl(HWND hWnd)
+0x43D690=Sys_EngineCreate
+type: geEngine *__cdecl(HWND hWnd, const char *AppName, const char *DriverDirectory, uint32 Version)
+0x43D9D0=Sys_GetCPUFreq
+type: geBoolean __cdecl(Sys_CPUInfo *Info)
+0x43DA20=EnumSubDrivers
+type: static geBoolean __cdecl(Sys_DriverInfo *DriverInfo, const char *DriverDirectory)
+0x43DDF0=geEngine_UpdateFogEnable
+type: 
+0x43DE40=geEngine_UpdateGamma
+type: void __cdecl(geEngine *Engine)
+0x43E000=geEngine_AddBitmap
+type: int __cdecl(geEngine *engine, void *bitmap)
+0x43E070=geEngine_RemoveBitmap
+type: 
+0x43E280=geEngine_DrawBitmap
+type: geBoolean __fastcall(const geEngine *Engine, const void *Bitmap, const void *Source, uint32 x, uint32 y)
+0x43E7B0=geEngine_CreateWorldLightmapTHandles
+type: 
+0x43E860=geEngine_AttachAll
+type: geBoolean __cdecl(geEngine *Engine)
+0x43E8F0=geEngine_DetachAll
+type: geBoolean __cdecl(geEngine *Engine)
+0x43E970=geEngine_ResetDriver
+type: geBoolean __cdecl(geEngine *Engine)
+0x43E9F0=geEngine_InitFonts
+type: geBoolean __cdecl(geEngine *Engine)
+0x43EB10=geEngine_ShutdownFonts
+type: geBoolean __cdecl(geEngine *Engine)
+0x43EB70=geEngine_SetAllWorldChangedFlag
+type: void __cdecl(geEngine *Engine, geBoolean Flag)
+0x43EC80=Engine_InitDriver
+type: static geBoolean __cdecl(geEngine *Engine, geDriver *Driver, geDriver_Mode *DriverMode)
+0x43EF40=geEngine_RenderWorld
+type: geBoolean __cdecl(geEngine *Engine, geWorld *World, geCamera *Camera, geFloat Time)
+0x43F020=geEngine_BeginFrame
+type: geBoolean __cdecl(geEngine *Engine, void *Camera, geBoolean ClearScreen)
+0x43F120=geEngine_Prep
+type: geBoolean __cdecl(geEngine *Engine)
+0x43F1E0=geEngine_EndFrame
+type: geBoolean __cdecl(geEngine *Engine)
+0x43F500=Engine_DrawFontBuffer
+type: static void __cdecl(geEngine *Engine)
+0x43F6E0=some_string_fmt_fn
+type: 
+0x43FB00=geActor_DefCreate
+type: 
+0x43FB70=geActor_Create
+type: 
+0x43FE90=geActor_SetBody
+type: geBoolean __cdecl(void *actorDef, void *BodyGeom)
+0x43FFA0=geActor_DefCreateFromFile
+type: void *__cdecl(geVFile *file)
+0x440460=geActor_GetBoneTransform_
+type: geBoolean __fastcall(const geActor *A, const char *BoneName, geXForm3d *Transform)
+0x4404C0=geActor_GetBoneIndex
+type: 
+0x440870=geActor_SetExtBox
+type: int __fastcall(geActor *A, void *ExtBox, char *CenterOnThisBone)
+0x4414A0=geCamera_Create
+type: geCamera *__fastcall(geFloat Fov, const geRect *Rect)
+0x441590=geCamera_GetClippingRect
+type: 
+0x4415D0=geCamera_GetWidthHeight
+type: int __fastcall(geCamera *camera, float *width, float *height)
+0x441600=geCamera_SetAttributes
+type: void __fastcall(geCamera *Camera, geFloat Fov, const geRect *Rect)
+0x441A70=geCSNetMgr_Create
+type: geNetMgr *__cdecl()
+0x441FD0=geCSNetMgr_StartSession
+type: geBoolean __fastcall(geNetMgr *M, const char *SessionName, const char *PlayerName)
+0x442520=geWBitmap_Pool_CreateAllWBitmaps
+type: geBoolean __cdecl(geWBitmap_Pool *Pool, GBSP_BSPData *BSPData)
+0x442DD0=GetSurfInfo
+type: geBoolean __cdecl(World_BSP *BSP)
+0x445780=Light_WorldSetLTypeTable
+type: geBoolean __cdecl(void *World, int32 LType, const char *Table)
+0x446070=Hash_WalkNext
+type: int __fastcall()
+0x4460C0=GrabMemberAtOffset8
+type: int __cdecl(void *)
+0x4460D0=List_Start
+type: 
+0x4461B0=GBSP_LoadGBSPFile
+type: BOOL __cdecl(geVFile *File, GBSP_BSPData *BSP)
+0x446210=ReadChunk
+type: static geBoolean __cdecl(GBSP_BSPData *BSP, GBSP_Chunk *Chunk, geVFile *f)
+0x4487F0=BitmapList_AttachAll
+type: geBoolean __cdecl(BitmapList *pList, DRV_Driver *Driver, geFloat Gamma)
+0x44AA60=unknown_libname_2
+type: 
+0x44AA70=unknown_libname_3
+type: 
+0x44B8A0=geQKFrame_CreateFromBinaryFile
+type: void *__fastcall(geVFile *pFile, int *InterpolationType, int *Looping)
+0x44BBB0=unknown_libname_4
+type: 
+0x44BBC0=unknown_libname_5
+type: 
+0x44C590=geVKFrame_CreateFromBinaryFile
+type: int __fastcall(geVFile *file, int *InterpolationType, int *Looping)
+0x44C8E0=geTKArray_CreateFromBinaryFile
+type: void *__fastcall(geVFile *pFile)
+0x452E50=nullsub_1
+type: 
+0x453CE0=nullsub_2
+type: 
+0x453D10=DoSplashScreen
+type: geBoolean __cdecl(geEngine *Engine, geDriver_Mode *DriverMode)
+0x455AD0=gePose_GetJointTransform
+type: 
+0x457F30=InitNetPlay
+type: int __cdecl(int guid)
+0x458100=NetPlayCreateSession
+type: 
+0x458180=NetPlayCreatePlayer
+type: 
+0x4585D0=DPEnumConnectionsCallback
+type: 
+0x458690=DodPError
+type: 
+0x459530=?spfun@std@@YAXAAVios_base@1@H@Z
+type: void __cdecl(struct std::ios_base *, int)
+0x45B550=_time
+type: 
+0x45B62C=__fpmath
+type: 
+0x45B643=nullsub_3
+type: 
+0x45B644=__cfltcvt_init
+type: 
+0x45B67C=_vsprintf
+type: 
+0x45B6CD=_sprintf
+type: 
+0x45B720=__ftol
+type: 
+0x45B750=_fmod
+type: 
+0x45B75A=__CIfmod
+type: 
+0x45B782=_malloc
+type: 
+0x45B794=__nh_malloc
+type: 
+0x45B8BC=execption_thing
+type: 
+0x45B9A5=_srand
+type: 
+0x45B9B2=_rand
+type: 
+0x45B9E0=__CIasin
+type: 
+0x45BAB0=__CIacos
+type: 
+0x45BB7B=_strtok
+type: 
+0x45BC1F=_floor
+type: int __cdecl(double)
+0x45BCEE=_atol
+type: 
+0x45BD84=_toupper
+type: 
+0x45BDF3=_toupper_0
+type: 
+0x45BEC0=_strncpy
+type: 
+0x45BFC0=__CIpow
+type: 
+0x45C1DD=_atof
+type: 
+0x45C240=__alloca_probe
+type: 
+0x45C26F=__isctype
+type: 
+0x45C300=_strchr
+type: 
+0x45C3BC=___inittime
+type: 
+0x45C3F1=__fsopen
+type: 
+0x45C422=_fopen
+type: 
+0x45C435=_fclose
+type: 
+0x45C466=__fclose_lk
+type: 
+0x45C4E1=_fwrite
+type: 
+0x45C5EB=_fseek
+type: 
+0x45C617=__fseek_lk
+type: 
+0x45C6A4=_internal_file_readFn
+type: 
+0x45C6D3=_fread
+type: 
+0x45C7BB=__getcwd
+type: 
+0x45C7E2=__getdcwd_lk
+type: 
+0x45C8B7=__validdrive
+type: 
+0x45C8EE=__cinit
+type: 
+0x45C91B=_exit
+type: 
+0x45C92C=__exit
+type: 
+0x45C93D=_doexit
+type: 
+0x45C9E2=__lockexit
+type: 
+0x45C9EB=__unlockexit
+type: 
+0x45C9F4=__initterm
+type: 
+0x45CA10=_strstr
+type: 
+0x45CA90=_fprintf
+type: 
+0x45CACC=start
+type: 
+0x45CBD4=__amsg_exit
+type: 
+0x45CBF9=_fast_error_exit
+type: 
+0x45CF4C=_sscanf
+type: 
+0x45CF80=_qsort
+type: 
+0x45D0D4=_shortsort
+type: 
+0x45D122=_swap
+type: 
+0x45D150=_strrchr
+type: 
+0x45D180=_strncat
+type: 
+0x45D2B0=_memcpy
+type: 
+0x45D5E5=_ceil
+type: int __cdecl(double)
+0x45D6B4=__splitpath
+type: 
+0x45D7FB=___loctotime_t
+type: 
+0x45D8BD=__setdefaultprecision
+type: 
+0x45D8CF=__ms_p5_test_fdiv
+type: 
+0x45D90D=__ms_p5_mp_test_fdiv
+type: 
+0x45D936=__forcdecpt
+type: 
+0x45D9F6=__fassign
+type: 
+0x45DA34=__cftoe
+type: 
+0x45DA95=__cftoe2
+type: 
+0x45DB57=__cftof
+type: 
+0x45DBAC=__cftof2
+type: 
+0x45DC53=__cftog
+type: 
+0x45DCE6=__cfltcvt
+type: 
+0x45DD37=__shift
+type: 
+0x45DD5C=__flsbuf
+type: 
+0x45DE74=__output
+type: 
+0x45E5B5=_write_char
+type: 
+0x45E5EA=_write_multi_char
+type: 
+0x45E61B=_write_string
+type: 
+0x45E653=_get_int_arg
+type: 
+0x45E660=_get_int64_arg
+type: 
+0x45E670=_get_short_arg
+type: 
+0x45E680=__cintrindisp2
+type: 
+0x45E6BE=__cintrindisp1
+type: 
+0x45E6FB=__ctrandisp2
+type: int __cdecl(double, double)
+0x45E743=ctranexit
+type: 
+0x45E74A=cintrinexit
+type: 
+0x45E87B=__ctrandisp1
+type: int __cdecl(double)
+0x45E8AE=__fload
+type: int __cdecl(double)
+0x45E8F0=__trandisp1
+type: 
+0x45E957=__trandisp2
+type: 
+0x45EAA9=__rttosnpopde
+type: 
+0x45EAB9=chsifnegret
+type: 
+0x45EAC0=unknown_libname_6
+type: int __cdecl(_TBYTE, _TBYTE, int, int)
+0x45EBD7=unknown_libname_7
+type: int __cdecl(int, int, _TBYTE, int, int, _TBYTE)
+0x45F076=unknown_libname_8
+type: 
+0x45F089=unknown_libname_9
+type: 
+0x45F2B1=unknown_libname_19
+type: 
+0x45F2C6=unknown_libname_20
+type: 
+0x45F4CC=unknown_libname_21
+type: 
+0x45F57E=unknown_libname_22
+type: 
+0x45F784=unknown_libname_23
+type: 
+0x45F84B=__callnewh
+type: 
+0x45FA38=___sbh_heap_init
+type: 
+0x45FA80=___sbh_find_block
+type: 
+0x45FDD4=___sbh_alloc_block
+type: 
+0x4600DD=___sbh_alloc_new_region
+type: 
+0x46018E=___sbh_alloc_new_group
+type: 
+0x460289=___sbh_resize_block
+type: 
+0x460C4C=__mtinitlocks
+type: 
+0x460C75=__lock
+type: 
+0x460CD6=__unlock
+type: 
+0x460CEC=__global_unwind2
+type: 
+0x460D0C=__unwind_handler
+type: 
+0x460D2E=__local_unwind2
+type: 
+0x460DB8=_at_done
+type: 
+0x460DB9=__NLG_Notify1
+type: 
+0x460DC2=__NLG_Notify
+type: 
+0x460DE4=__except_handler3
+type: 
+0x460EA1=__seh_longjmp_unwind@4
+type: 
+0x460EBC=__mtinit
+type: 
+0x460F10=__initptd
+type: 
+0x460F23=__getptd
+type: 
+0x460F90=__startTwoArgErrorHandling
+type: 
+0x460FA7=__startOneArgErrorHandling
+type: 
+0x460FF0=__twoToTOS
+type: 
+0x461005=__load_CW
+type: 
+0x46101C=__convertTOStoQNaN
+type: 
+0x461035=__fload_withFB
+type: 
+0x461078=__checkTOS_withFB
+type: 
+0x4610C5=__check_overflow_exit
+type: 
+0x4610D9=__check_range_exit
+type: 
+0x46117C=__handle_qnan1
+type: int __cdecl(int, double, int)
+0x4611D0=__except1
+type: int __cdecl(int, int, double, double, int)
+0x461268=__raise_exc
+type: 
+0x46151B=__handle_exc
+type: 
+0x461732=__umatherr
+type: int __cdecl(int, int, int, int, int, int, double, int)
+0x4617BA=__set_errno
+type: 
+0x4617E2=__get_fname
+type: 
+0x461807=__errcode
+type: 
+0x461834=__frnd
+type: int __cdecl(double)
+0x461846=__set_exp
+type: int __cdecl(double, int)
+0x46186F=__sptype
+type: 
+0x4618C9=__decomp
+type: int __cdecl(double, int)
+0x46198A=__statfp
+type: 
+0x461998=__clrfp
+type: 
+0x4619A7=__ctrlfp
+type: 
+0x4619CA=__set_statfp
+type: 
+0x461A20=__allmul
+type: 
+0x461A54=___crtLCMapStringA
+type: 
+0x461C80=fFYTOX
+type: 
+0x461D67=zerotoxdone
+type: 
+0x461DB2=_expbigret
+type: 
+0x461DDE=__ffexpm1
+type: 
+0x461E21=_isintTOS
+type: 
+0x461E86=noerror
+type: 
+0x461E87=__powhlp
+type: int __cdecl(double, double, int)
+0x461FB7=__d_inttype
+type: int __cdecl(double)
+0x46201C=__fltin2
+type: 
+0x4620A0=_strlen
+type: 
+0x46211B=___crtGetStringTypeA
+type: 
+0x462270=__aulldiv
+type: 
+0x462394=__lock_file
+type: 
+0x4623C3=__lock_file2
+type: 
+0x4623E6=__unlock_file
+type: 
+0x462415=__unlock_file2
+type: 
+0x462438=__openfile
+type: 
+0x4625A8=__getstream
+type: 
+0x462670=__close
+type: 
+0x4626CD=__close_lk
+type: 
+0x462750=__freebuf
+type: 
+0x46277B=__fflush_lk
+type: 
+0x4627A9=__flush
+type: 
+0x46280E=_flsall
+type: 
+0x4628B2=__write
+type: 
+0x462917=__write_lk
+type: 
+0x462AB0=_memcpy_0
+type: 
+0x462E58=__errno
+type: 
+0x462E61=___doserrno
+type: 
+0x462E6A=__lseek
+type: 
+0x462ECF=__lseek_lk
+type: 
+0x462F42=__ftell_lk
+type: 
+0x4630A3=__filbuf
+type: 
+0x46317F=__read
+type: 
+0x4631E4=__read_lk
+type: 
+0x4633C0=_strcpy
+type: 
+0x4633D0=_strcat
+type: 
+0x4634B0=__stbuf
+type: 
+0x46353D=__ftbuf
+type: 
+0x463567=__XcptFilter
+type: 
+0x4636A5=_xcptlookup
+type: 
+0x4636DF=__wincmdln
+type: 
+0x463737=__setenvp
+type: 
+0x4637F0=__setargv
+type: 
+0x463889=_parse_cmdline
+type: 
+0x463A3D=___crtGetEnvironmentStringsA
+type: 
+0x463B6F=__ioinit
+type: 
+0x463D2B=__FF_MSGBANNER
+type: 
+0x463EB7=__input
+type: 
+0x4648DC=__hextodec
+type: 
+0x464913=_fgetc
+type: 
+0x46492D=__un_inc
+type: 
+0x464944=__whiteout
+type: 
+0x464968=__setmbcp
+type: 
+0x464B15=_getSystemCP
+type: 
+0x464B5F=_CPtoLCID
+type: 
+0x464B92=_setSBCS
+type: 
+0x464BBB=_setSBUpLow
+type: 
+0x464D40=___initmbctable
+type: 
+0x464D5C=__mbsnbcpy
+type: 
+0x464DF6=___tzset
+type: 
+0x464E24=__tzset_lk
+type: 
+0x4650AB=__isindst
+type: 
+0x4650CC=__isindst_0
+type: 
+0x465278=_cvtdate
+type: 
+0x4653B8=__control87
+type: 
+0x4653ED=__controlfp
+type: 
+0x465403=__abstract_cw
+type: 
+0x465495=__hw_cw
+type: 
+0x46551E=_tolower
+type: 
+0x46558D=_tolower_0
+type: 
+0x465658=__ZeroTail
+type: 
+0x4656A1=__IncMan
+type: 
+0x4656F7=__RoundMan
+type: 
+0x465783=__CopyMan
+type: 
+0x46579E=__FillZeroMan
+type: 
+0x4657AA=__IsZeroMan
+type: 
+0x4657C5=__ShrMan
+type: 
+0x465852=__ld12cvt
+type: 
+0x465A44=__fptostr
+type: 
+0x465ABB=__fltout2
+type: 
+0x465B17=___dtold
+type: 
+0x465BD0=_memset
+type: 
+0x465C28=__fptrap
+type: 
+0x465C31=__getbuf
+type: 
+0x465C75=__isatty
+type: 
+0x465C9E=_wctomb
+type: 
+0x465CF7=__wctomb_lk
+type: 
+0x465D60=__aullrem
+type: 
+0x465DD5=__87except
+type: 
+0x465EA5=_strtol
+type: 
+0x465EBC=_strtoxl
+type: 
+0x4660D0=_strncmp
+type: 
+0x466250=_strcmp
+type: 
+0x4662E0=_strcspn
+type: 
+0x466320=_strpbrk
+type: 
+0x46635A=__fpclass
+type: int __cdecl(double)
+0x4663EC=___strgtold12
+type: 
+0x4668BD=__fcloseall
+type: 
+0x46693E=__sopen
+type: 
+0x466C0D=__alloc_osfhnd
+type: 
+0x466D30=__set_osfhnd
+type: 
+0x466DAC=__free_osfhnd
+type: 
+0x466E2B=__get_osfhandle
+type: 
+0x466E6D=__lock_fhandle
+type: 
+0x466ECC=__unlock_fhandle
+type: 
+0x466EEE=__commit
+type: 
+0x466F81=__ismbblead
+type: 
+0x466F92=_x_ismbbtype
+type: 
+0x466FC3=___crtMessageBoxA
+type: 
+0x46704C=_mbtowc
+type: 
+0x4670A9=__mbtowc_lk
+type: 
+0x467172=_isspace
+type: 
+0x4671A0=__allshl
+type: 
+0x4671BF=_ungetc
+type: 
+0x46722D=_getenv
+type: 
+0x4672AA=___addl
+type: 
+0x4672CB=___add_12
+type: 
+0x467329=___shl_12
+type: 
+0x467357=___shr_12
+type: 
+0x467384=___mtold12
+type: 
+0x46744B=_$I10_OUTPUT
+type: 
+0x4676DE=__itoa
+type: 
+0x46770B=_xtoa
+type: 
+0x467770=__strcmpi
+type: 
+0x467840=__strnicmp
+type: 
+0x467941=___ld12mul
+type: 
+0x467B61=___multtenpow12
+type: 
+0x467BDD=__chsize_lk
+type: 
+0x467D02=__mbsnbicoll
+type: 
+0x467D41=___wtomb_environ
+type: 
+0x467DAF=__setmode_lk
+type: 
+0x467E10=___crtCompareStringA
+type: 
+0x46808D=_strncnt
+type: 
+0x4680B8=___crtsetenv
+type: 
+0x46823F=_findenv
+type: 
+0x468297=_copy_environ
+type: 
+0x4682FE=__mbschr
+type: 
+0x468395=__strdup
+type: 
+0x4683C0=RtlUnwind
+type: 

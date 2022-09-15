@@ -1,0 +1,669 @@
+struct _SCOPETABLE_ENTRY {
+//  Size              : 12
+//  Number of members : 3
+  int EnclosingLevel;
+  void * FilterFunc;
+  void * HandlerFunc;
+
+}
+struct CPPEH_RECORD {
+//  Size              : 24
+//  Number of members : 3
+  DWORD old_esp;
+  EXCEPTION_POINTERS * exc_ptr;
+  struct _EH3_EXCEPTION_REGISTRATION registration;
+
+}
+struct _EH3_EXCEPTION_REGISTRATION {
+//  Size              : 16
+//  Number of members : 4
+  struct _EH3_EXCEPTION_REGISTRATION * Next;
+  PVOID ExceptionHandler;
+  PSCOPETABLE_ENTRY ScopeTable;
+  DWORD TryLevel;
+
+}
+struct geSound_System {
+//  Size              : 12
+//  Number of members : 3
+  void Active[4]
+  SoundManager * SoundM;
+  geFloat GlobalVolume;
+
+}
+struct IDirectSound {
+//  Size              : 4
+//  Number of members : 1
+  struct IDirectSoundVtbl * lpVtbl;
+
+}
+struct Channel {
+//  Size              : 36
+//  Number of members : 7
+  LPDIRECTSOUNDBUFFER buffer;
+  unsigned int ID;
+  int BaseFreq;
+  geSound_Cfg cfg;
+  void * Data;
+  struct Channel * next;
+  struct Channel * nextDup;
+
+}
+struct WAVEFORMATEX {
+//  Size              : 20
+//  Number of members : 7
+  WORD wFormatTag;
+  WORD nChannels;
+  DWORD nSamplesPerSec;
+  DWORD nAvgBytesPerSec;
+  WORD nBlockAlign;
+  WORD wBitsPerSample;
+  WORD cbSize;
+
+}
+struct geEngine {
+//  Size              : 230344
+//  Number of members : 37
+  Sys_DriverInfo DriverInfo;
+  Sys_CPUInfo CPUInfo;
+  Sys_DebugInfo DebugInfo;
+  LARGE_INTEGER CurrentTic;
+  Sys_FontInfo FontInfo;
+  User_Info * UserInfo;
+  HWND hWnd;
+  char[200] AppName;
+  int16[20] WaveTable;
+  void WaveDir[40]
+  geEngine_WorldList[8] WorldList;
+  int32 NumWorlds;
+  geWorld *[8] Worlds;
+  void StyleLUT1[16384]
+  geBoolean DisplayFrameRateCounter;
+  char * DriverDirectory;
+  BitmapList * AttachedBitmaps;
+  geBoolean[7] HasPixelFormat;
+  geRDriver_PixelFormat[7] PixelFormats;
+  geFloat CurrentGamma;
+  geFloat BitmapGamma;
+  geBoolean FogEnable;
+  geFloat FogR;
+  geFloat FogG;
+  geFloat FogB;
+  geFloat FogStart;
+  geFloat FogEnd;
+  geFloat ClearR;
+  geFloat ClearG;
+  geFloat ClearB;
+  geBoolean StencilShadowsEnable;
+  int NumStencilShadowLights;
+  geFloat ShadowR;
+  geFloat ShadowG;
+  geFloat ShadowB;
+  geFloat ShadowA;
+  geEngine_FrameState FrameState;
+
+}
+struct net_host_something_t {
+//  Size              : 49
+//  Number of members : 8
+  void field_0[4]
+  void field_4[4]
+  geEngine * Engine;
+  void field_C[4]
+  GameMgr_ * gameMgr;
+  void field_14[4]
+  void client?[4]
+  void field_48[1]
+
+}
+struct geVFile {
+//  Size              : 0
+//  Number of members : 0
+
+}
+struct BitmapList {
+//  Size              : 0
+//  Number of members : 0
+
+}
+struct geActor {
+//  Size              : 0
+//  Number of members : 0
+
+}
+struct geXForm3d {
+//  Size              : 0
+//  Number of members : 0
+
+}
+struct World_BSP {
+//  Size              : 0
+//  Number of members : 0
+
+}
+struct geNetMgr {
+//  Size              : 4
+//  Number of members : 1
+  geNetMgr * valid;
+
+}
+struct DSBUFFERDESC {
+//  Size              : 20
+//  Number of members : 5
+  DWORD dwSize;
+  DWORD dwFlags;
+  DWORD dwBufferBytes;
+  DWORD dwReserved;
+  LPWAVEFORMATEX lpwfxFormat;
+
+}
+struct client {
+//  Size              : 0
+//  Number of members : 0
+
+}
+struct geWBitmap_Pool {
+//  Size              : 0
+//  Number of members : 0
+
+}
+struct GBSP_BSPData {
+//  Size              : 0
+//  Number of members : 0
+
+}
+struct geSound_Cfg {
+//  Size              : 12
+//  Number of members : 3
+  geFloat Volume;
+  geFloat Pan;
+  geFloat Frequency;
+
+}
+struct Sys_DriverInfo {
+//  Size              : 210556
+//  Number of members : 8
+  geDriver[12] SubDrivers;
+  int32 NumSubDrivers;
+  char * CurFileName;
+  geBoolean Active;
+  HINSTANCE DriverHandle;
+  geDriver * CurDriver;
+  geDriver_Mode * CurMode;
+  DRV_Driver * RDriver;
+
+}
+struct vtbl_or_something {
+//  Size              : 144
+//  Number of members : 9
+  void field_0[4]
+  void field_40[4]
+  void field_60[4]
+  void field_6C[4]
+  void field_78[4]
+  void field_7C[4]
+  void field_80[4]
+  void field_88[4]
+  void field_8F[1]
+
+}
+struct geDriver {
+//  Size              : 17544
+//  Number of members : 5
+  int32 Id;
+  char[512] Name;
+  char[256] FileName;
+  geDriver_Mode[32] Modes;
+  int32 NumModes;
+
+}
+struct geDriver_Mode {
+//  Size              : 524
+//  Number of members : 4
+  int32 Id;
+  char[512] Name;
+  int32 Width;
+  int32 Height;
+
+}
+struct Sys_CPUInfo {
+//  Size              : 8
+//  Number of members : 1
+  LARGE_INTEGER Freq;
+
+}
+struct LARGE_INTEGER {
+//  Size              : 8
+//  Number of members : 2
+  DWORD lo;
+  DWORD hi;
+
+}
+struct Sys_DebugInfo {
+//  Size              : 40
+//  Number of members : 10
+  int32 TraversedPolys;
+  int32 SentPolys;
+  int32 RenderedPolys;
+  int32 NumModels;
+  int32 NumMirrors;
+  int32 NumActors;
+  int32 NumDLights;
+  int32 NumFog;
+  int32 LMap1;
+  int32 LMap2;
+
+}
+struct Sys_FontInfo {
+//  Size              : 2792
+//  Number of members : 4
+  geBitmap * FontBitmap;
+  uint32[256] FontLUT1;
+  Sys_String[20] ClientStrings;
+  int32 NumStrings;
+
+}
+struct Sys_String {
+//  Size              : 88
+//  Number of members : 3
+  int32 x;
+  int32 y;
+  char[80] String;
+
+}
+struct geEngine_WorldList {
+//  Size              : 8
+//  Number of members : 2
+  geWorld * World;
+  int32 RefCount;
+
+}
+struct geRDriver_PixelFormat {
+//  Size              : 8
+//  Number of members : 2
+  gePixelFormat PixelFormat;
+  uint32 Flags;
+
+}
+struct tagWNDCLASSA {
+//  Size              : 40
+//  Number of members : 10
+  UINT style;
+  WNDPROC lpfnWndProc;
+  int cbClsExtra;
+  int cbWndExtra;
+  HINSTANCE hInstance;
+  HICON hIcon;
+  HCURSOR hCursor;
+  HBRUSH hbrBackground;
+  LPCSTR lpszMenuName;
+  LPCSTR lpszClassName;
+
+}
+struct GameMgr_ {
+//  Size              : 71484
+//  Number of members : 11
+  GameMgr_ * thisP;
+  void someFloat[4]
+  char * Engine;
+  geSound_System * sound;
+  HWND WindowHandle;
+  void field_1C[4]
+  void world[4]
+  void VideoMode_1_3[4]
+  void Camera[4]
+  void field_11734[4]
+  GameMgr_ * thisP2;
+
+}
+struct host {
+//  Size              : 264
+//  Number of members : 264
+  void field_0[1]
+  void field_1[1]
+  void field_2[1]
+  void field_3[1]
+  void field_4[1]
+  void field_5[1]
+  void field_6[1]
+  void field_7[1]
+  void field_8[1]
+  void field_9[1]
+  void field_A[1]
+  void field_B[1]
+  void field_C[1]
+  void field_D[1]
+  void field_E[1]
+  void field_F[1]
+  void field_10[1]
+  void field_11[1]
+  void field_12[1]
+  void field_13[1]
+  void field_14[1]
+  void field_15[1]
+  void field_16[1]
+  void field_17[1]
+  void field_18[1]
+  void field_19[1]
+  void field_1A[1]
+  void field_1B[1]
+  void field_1C[1]
+  void field_1D[1]
+  void field_1E[1]
+  void field_1F[1]
+  void field_20[1]
+  void field_21[1]
+  void field_22[1]
+  void field_23[1]
+  void field_24[1]
+  void field_25[1]
+  void field_26[1]
+  void field_27[1]
+  void field_28[1]
+  void field_29[1]
+  void field_2A[1]
+  void field_2B[1]
+  void field_2C[1]
+  void field_2D[1]
+  void field_2E[1]
+  void field_2F[1]
+  void field_30[1]
+  void field_31[1]
+  void field_32[1]
+  void field_33[1]
+  void field_34[1]
+  void field_35[1]
+  void field_36[1]
+  void field_37[1]
+  void field_38[1]
+  void field_39[1]
+  void field_3A[1]
+  void field_3B[1]
+  void field_3C[1]
+  void field_3D[1]
+  void field_3E[1]
+  void field_3F[1]
+  void field_40[1]
+  void field_41[1]
+  void field_42[1]
+  void field_43[1]
+  void field_44[1]
+  void field_45[1]
+  void field_46[1]
+  void field_47[1]
+  void field_48[1]
+  void field_49[1]
+  void field_4A[1]
+  void field_4B[1]
+  void field_4C[1]
+  void field_4D[1]
+  void field_4E[1]
+  void field_4F[1]
+  void field_50[1]
+  void field_51[1]
+  void field_52[1]
+  void field_53[1]
+  void field_54[1]
+  void field_55[1]
+  void field_56[1]
+  void field_57[1]
+  void field_58[1]
+  void field_59[1]
+  void field_5A[1]
+  void field_5B[1]
+  void field_5C[1]
+  void field_5D[1]
+  void field_5E[1]
+  void field_5F[1]
+  void field_60[1]
+  void field_61[1]
+  void field_62[1]
+  void field_63[1]
+  void field_64[1]
+  void field_65[1]
+  void field_66[1]
+  void field_67[1]
+  void field_68[1]
+  void field_69[1]
+  void field_6A[1]
+  void field_6B[1]
+  void field_6C[1]
+  void field_6D[1]
+  void field_6E[1]
+  void field_6F[1]
+  void field_70[1]
+  void field_71[1]
+  void field_72[1]
+  void field_73[1]
+  void field_74[1]
+  void field_75[1]
+  void field_76[1]
+  void field_77[1]
+  void field_78[1]
+  void field_79[1]
+  void field_7A[1]
+  void field_7B[1]
+  void field_7C[1]
+  void field_7D[1]
+  void field_7E[1]
+  void field_7F[1]
+  void field_80[1]
+  void field_81[1]
+  void field_82[1]
+  void field_83[1]
+  void field_84[1]
+  void field_85[1]
+  void field_86[1]
+  void field_87[1]
+  void field_88[1]
+  void field_89[1]
+  void field_8A[1]
+  void field_8B[1]
+  void field_8C[1]
+  void field_8D[1]
+  void field_8E[1]
+  void field_8F[1]
+  void field_90[1]
+  void field_91[1]
+  void field_92[1]
+  void field_93[1]
+  void field_94[1]
+  void field_95[1]
+  void field_96[1]
+  void field_97[1]
+  void field_98[1]
+  void field_99[1]
+  void field_9A[1]
+  void field_9B[1]
+  void field_9C[1]
+  void field_9D[1]
+  void field_9E[1]
+  void field_9F[1]
+  void field_A0[1]
+  void field_A1[1]
+  void field_A2[1]
+  void field_A3[1]
+  void field_A4[1]
+  void field_A5[1]
+  void field_A6[1]
+  void field_A7[1]
+  void field_A8[1]
+  void field_A9[1]
+  void field_AA[1]
+  void field_AB[1]
+  void field_AC[1]
+  void field_AD[1]
+  void field_AE[1]
+  void field_AF[1]
+  void field_B0[1]
+  void field_B1[1]
+  void field_B2[1]
+  void field_B3[1]
+  void field_B4[1]
+  void field_B5[1]
+  void field_B6[1]
+  void field_B7[1]
+  void field_B8[1]
+  void field_B9[1]
+  void field_BA[1]
+  void field_BB[1]
+  void field_BC[1]
+  void field_BD[1]
+  void field_BE[1]
+  void field_BF[1]
+  void field_C0[1]
+  void field_C1[1]
+  void field_C2[1]
+  void field_C3[1]
+  void field_C4[1]
+  void field_C5[1]
+  void field_C6[1]
+  void field_C7[1]
+  void field_C8[1]
+  void field_C9[1]
+  void field_CA[1]
+  void field_CB[1]
+  void field_CC[1]
+  void field_CD[1]
+  void field_CE[1]
+  void field_CF[1]
+  void field_D0[1]
+  void field_D1[1]
+  void field_D2[1]
+  void field_D3[1]
+  void field_D4[1]
+  void field_D5[1]
+  void field_D6[1]
+  void field_D7[1]
+  void field_D8[1]
+  void field_D9[1]
+  void field_DA[1]
+  void field_DB[1]
+  void field_DC[1]
+  void field_DD[1]
+  void field_DE[1]
+  void field_DF[1]
+  void field_E0[1]
+  void field_E1[1]
+  void field_E2[1]
+  void field_E3[1]
+  void field_E4[1]
+  void field_E5[1]
+  void field_E6[1]
+  void field_E7[1]
+  void field_E8[1]
+  void field_E9[1]
+  void field_EA[1]
+  void field_EB[1]
+  void field_EC[1]
+  void field_ED[1]
+  void field_EE[1]
+  void field_EF[1]
+  void field_F0[1]
+  void field_F1[1]
+  void field_F2[1]
+  void field_F3[1]
+  void field_F4[1]
+  void field_F5[1]
+  void field_F6[1]
+  void field_F7[1]
+  void field_F8[1]
+  void field_F9[1]
+  void field_FA[1]
+  void field_FB[1]
+  void field_FC[1]
+  void field_FD[1]
+  void field_FE[1]
+  void field_FF[1]
+  void field_100[1]
+  void field_101[1]
+  void field_102[1]
+  void field_103[1]
+  void field_104[1]
+  void field_105[1]
+  void field_106[1]
+  void field_107[1]
+
+}
+struct geCamera {
+//  Size              : 0
+//  Number of members : 0
+
+}
+struct geRect {
+//  Size              : 16
+//  Number of members : 4
+  int32 left;
+  int32 right;
+  int32 top;
+  int32 bottom;
+
+}
+struct GBSP_Chunk {
+//  Size              : 0
+//  Number of members : 0
+
+}
+struct move {
+//  Size              : 58
+//  Number of members : 58
+  void field_0[1]
+  void field_1[1]
+  void field_2[1]
+  void field_3[1]
+  void field_4[1]
+  void field_5[1]
+  void field_6[1]
+  void field_7[1]
+  void field_8[1]
+  void field_9[1]
+  void field_A[1]
+  void field_B[1]
+  void player[1]
+  void field_D[1]
+  void field_E[1]
+  void field_F[1]
+  void field_10[1]
+  void field_11[1]
+  void field_12[1]
+  void field_13[1]
+  void field_14[1]
+  void field_15[1]
+  void field_16[1]
+  void field_17[1]
+  void field_18[1]
+  void field_19[1]
+  void field_1A[1]
+  void field_1B[1]
+  void field_1C[1]
+  void field_1D[1]
+  void field_1E[1]
+  void field_1F[1]
+  void keyDownbitfield[1]
+  void field_21[1]
+  void field_22[1]
+  void field_23[1]
+  void field_24[1]
+  void field_25[1]
+  void field_26[1]
+  void field_27[1]
+  void field_28[1]
+  void field_29[1]
+  void field_2A[1]
+  void field_2B[1]
+  void field_2C[1]
+  void field_2D[1]
+  void field_2E[1]
+  void field_2F[1]
+  void field_30[1]
+  void field_31[1]
+  void field_32[1]
+  void field_33[1]
+  void field_34[1]
+  void field_35[1]
+  void field_36[1]
+  void field_37[1]
+  void field_38[1]
+  void field_39[1]
+
+}
